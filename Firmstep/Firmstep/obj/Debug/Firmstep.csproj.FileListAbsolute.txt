@@ -1,0 +1,6 @@
+C:\Users\Staz-PC\Documents\Visual Studio 2015\Projects\Firmstep\Firmstep\bin\Debug\Firmstep.exe.config
+C:\Users\Staz-PC\Documents\Visual Studio 2015\Projects\Firmstep\Firmstep\bin\Debug\Firmstep.exe
+C:\Users\Staz-PC\Documents\Visual Studio 2015\Projects\Firmstep\Firmstep\bin\Debug\Firmstep.pdb
+C:\Users\Staz-PC\Documents\Visual Studio 2015\Projects\Firmstep\Firmstep\obj\Debug\Firmstep.csprojResolveAssemblyReference.cache
+C:\Users\Staz-PC\Documents\Visual Studio 2015\Projects\Firmstep\Firmstep\obj\Debug\Firmstep.exe
+C:\Users\Staz-PC\Documents\Visual Studio 2015\Projects\Firmstep\Firmstep\obj\Debug\Firmstep.pdb
