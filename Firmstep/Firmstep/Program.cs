@@ -34,7 +34,10 @@ namespace Firmstep
 
             int count = 0;
 
-            while(rowTop <= rowBot && colLeft <= colRight)
+            int currentStep = 0;
+            int maxStep = (row * column) - 1;
+
+            while(currentStep <= maxStep)
             {
                 if (direction == 0)
                 {
@@ -42,6 +45,7 @@ namespace Firmstep
                     {
                         matrix[rowBot, i] = count;
                         count++;
+                        currentStep++;
                     }
 
                     rowBot--;
@@ -53,6 +57,7 @@ namespace Firmstep
                     {
                         matrix[i, colRight] = count;
                         count++;
+                        currentStep++;
                     }
 
                     colRight--;
@@ -64,6 +69,7 @@ namespace Firmstep
                     {
                         matrix[rowTop, i] = count;
                         count++;
+                        currentStep++;
                     }
                     rowTop++;
                     direction = 3;
@@ -74,6 +80,7 @@ namespace Firmstep
                     {
                         matrix[i, colLeft] = count;
                         count++;
+                        currentStep++;
                     }
                     colLeft++;
                     direction = 0;
