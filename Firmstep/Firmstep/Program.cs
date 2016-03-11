@@ -10,14 +10,14 @@ namespace Firmstep
     {
         static void Main(string[] args)
         {
-            int row = 5;
-            int column = 5;
+            int row = 10;
+            int column = 10;
 
             int[,] matrix = new int[row, column];
 
             PopulateMatrix(matrix, row, column);
 
-            PrintMatrix(matrix, 5);
+            PrintMatrix(matrix, 10);
 
             Console.ReadKey();
 
@@ -40,7 +40,7 @@ namespace Firmstep
                 {
                     for(int i = colLeft; i < colRight; i++)
                     {
-                        matrix[i, rowBot] = count;
+                        matrix[rowBot, i] = count;
                         count++;
                     }
 
@@ -51,7 +51,7 @@ namespace Firmstep
                 {
                     for(int i = colRight; i > rowTop; i--)
                     {
-                        matrix[colRight, i] = count;
+                        matrix[i, colRight] = count;
                         count++;
                     }
 
@@ -60,9 +60,9 @@ namespace Firmstep
                 }
                 else if(direction == 2)
                 {
-                    for(int i = colRight; i > colLeft; i--)
+                    for(int i = colRight + 1; i > colLeft; i--)
                     {
-                        matrix[i, rowTop] = count;
+                        matrix[rowTop, i] = count;
                         count++;
                     }
                     rowTop++;
@@ -70,9 +70,9 @@ namespace Firmstep
                 }
                 else if(direction == 3)
                 {
-                    for(int i = rowTop; i < rowBot; i++)
+                    for(int i = rowTop - 1; i <= rowBot; i++)
                     {
-                        matrix[colLeft, i] = count;
+                        matrix[i, colLeft] = count;
                         count++;
                     }
                     colLeft++;
